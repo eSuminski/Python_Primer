@@ -77,3 +77,77 @@ def test_name_of_test():
 commands:
 - pytest package (runs all tests inside the package)
 - pytest package\module (runs tests inside the module)
+
+### Key words
+
+#### control flow
+```Python
+for # used if you want something to loop
+in # use this when you want to reference something inside another element
+while # use this when you want to loop for specified conidtion
+```
+
+#### exceptions
+```Python
+try # this is used to start your try except block. Use this when you think something can go wrong
+except # use this to handle things going wrong
+finally # use this when you need something to happen whether your code executes successfully or not
+raise # use this to raise an exception
+```
+
+#### importing
+```Python
+from # use this to specify where you are importing your code from
+import # use this to import your code
+as # you can set a reference to whatever it is you are importing
+```
+
+#### logical operators
+```Python
+is # use this when you want a True result when A = B
+is not # use this when you want a True result when A != B
+and # use this when you want to set up multiple trigger conditions
+or # use this when you want to set up multiple optional trigger conditiona
+if # use this when you want code to run under specified conditions
+elif # use this when you want code to run under conditions not covered by the if statement
+else # use this to run code if your if and elif statements do not run
+True # boolean indicating something is true
+False # boolean indicating something is false
+```
+
+#### others
+
+```Python
+None # default function return value
+pass # use this to ignore code
+def # used to create functions
+class # used to create classes
+assert # used for testing to get a boolean result
+break # used to escape a loop
+```
+
+#### operators
+```Python
++ # addition
+- # subtraction
+* # multiplication
+/ # division
+** # power of
+% # modulus
+// # floor division
+```
+
+### Python Scopes
+Python follows LEGB scopping 
+Local: this is available in the local code block (current indenting)
+Enclosing: this is available to any code within the code block including inner blocks (functions in functions)
+Global: this is available to all code within the module
+Built-in: these are the key words and method signatures provided by Python. Do not repurpose these
+
+### Python Classes
+```Python
+class ClassName(Extended, Classes):
+    def __init__(self, parameters, go, here="this is a default value, must go at end"):
+        self.parameters = parameters
+        self.go = go
+        self.here = here
