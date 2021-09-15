@@ -151,3 +151,19 @@ class ClassName(Extended, Classes):
         self.parameters = parameters
         self.go = go
         self.here = here
+```
+
+### Collections
+```Python
+List = [1,2,3,4]
+Set = {1,2,3,4}
+Tuple = (1,2,3,4)
+Dictionary = {"a":1,"b":2,"c":3}
+```
+
+|Collection|Mutable|Duplicates|Indexable|
+|----|-------|----------|---------|
+|List| yes   | yes      | yes     |
+|Set | yes   | no       | no      |
+|Tuple| no   | yes      | yes     |
+|dictionary| yes | no(key) | version |
