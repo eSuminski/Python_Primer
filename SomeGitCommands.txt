@@ -1,0 +1,16 @@
+general flow to follow:
+
+git clone {repo link}
+
+git checkout -b "branchname" (this creates a new branch and changes to it)
+
+git add . (when you are ready to add your work to the repo. This puts your work into "staging")
+
+git commit -m "your message here" (this actually saves your work)
+
+git push (if you are making changes to a branch this is fine)
+git push --set-upstream origin currentbranch (use this if you want to push changes from your branch to the main branch)
+
+if your .gitignore file is not properly preventing files and folders from being saved on the repo then clone your
+repo again, checkout a branch, and run the following command before the add . command:
+git rm -r --cached . 
